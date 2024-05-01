@@ -1,13 +1,16 @@
 # Eclipse Paho JavaScript client
 
-[![Build Status](https://travis-ci.org/eclipse/paho.mqtt.javascript.svg?branch=develop)](https://travis-ci.org/eclipse/paho.mqtt.javascript)
-
 The Paho JavaScript Client is an MQTT browser-based client library written in Javascript that uses WebSockets to connect to an MQTT Broker.
 
 ## Project description:
 
 The Paho project has been created to provide reliable open-source implementations of open and standard messaging protocols aimed at new, existing, and emerging applications for Machine-to-Machine (M2M) and Internet of Things (IoT).
 Paho reflects the inherent physical and cost constraints of device connectivity. Its objectives include effective levels of decoupling between devices and applications, designed to keep markets open and encourage the rapid growth of scalable Web and Enterprise middleware and applications.
+
+**This version has basic support for protocol version 5 (only tested with QOS 0)**
+
+- Connect/Subscribe/Unsubscribe and Send messages to MQTT5 broker with empty properties
+- Received messages from MQTT5 broker contain new properties object (till now only userProperties)
 
 ## Links
 
@@ -25,9 +28,7 @@ Paho reflects the inherent physical and cost constraints of device connectivity.
 
 ### Downloading
 
-A zip file containing the full and a minified version the Javascript client can be downloaded from the [Paho downloads page](https://projects.eclipse.org/projects/iot.paho/downloads)
-
-Alternatively the Javascript client can be downloaded directly from the projects git repository: [https://raw.githubusercontent.com/eclipse/paho.mqtt.javascript/master/src/paho-mqtt.js](https://raw.githubusercontent.com/eclipse/paho.mqtt.javascript/master/src/paho-mqtt.js).
+The Javascript client can be downloaded directly from the projects git repository: [https://raw.githubusercontent.com/joed74/paho.mqtt.javascript/master/src/paho-mqtt.js](https://raw.githubusercontent.com/joed74/paho.mqtt.javascript/master/src/paho-mqtt.js).
 
 Please **do not** link directly to this url from your application.
 
